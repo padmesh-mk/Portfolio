@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Professional Portfolio of PADMESH MK, Cybersecurity Graduate. Explore systems security work, pentesting, vulnerabilities auditing, and secure architectures.">
+  <meta name="keywords"
+    content="Cyber Security, Penetration Testing, VAPT, PADMESH MK, Portfolio, Systems Security, Security Analyst">
+  <meta name="author" content="PADMESH MK">
+  <title>PADMESH MK | Cybersecurity Graduate | Portfolio</title>
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Favicon Mock (High tech icon placeholder) -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+</head>
+
+<body>
+  <!-- Scanline Overlay for Cyber Aesthetic -->
+  <div class="scanlines"></div>
+
+  <!-- Header Navigation -->
+  <header class="navbar" id="navbar">
+    <a href="#" class="nav-logo" id="navLogo">
+      <i data-lucide="shield-alert"></i>PADMESH<span> MK</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#hero" class="nav-item active" id="linkHero">Home</a>
+      <a href="#about" class="nav-item" id="linkAbout">About</a>
+      <a href="#skills" class="nav-item" id="linkSkills">Skills</a>
+      <a href="#projects" class="nav-item" id="linkProjects">Projects</a>
+      <a href="#experience" class="nav-item" id="linkExperience">Internship</a>
+      <a href="#contact" class="nav-item" id="linkContact">Terminal</a>
+    </nav>
+
+    <div class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="matrix-canvas-container">
+        <canvas id="matrixCanvas"></canvas>
+      </div>
+      <div class="section-bg-grid"></div>
+
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-pretitle">root@padmeshmk:~# whoami</div>
+          <h1 class="hero-title" id="heroTitle">
+            Hi, I'm <span>PADMESH MK</span>
+          </h1>
+          <div class="hero-subtext" id="heroSubtext">
+            <!-- Simulated Typewriter Text via JS -->
+            <span class="typewriter-text" id="typewriterText"></span>
+          </div>
+          <p class="hero-description" id="heroDesc">
+            Fourth-year B.E. Computer Science student specializing in Cybersecurity at Sathyabama Institute with hands-on experience in Python, embedded systems, and secure application development. Seeking a professional security internship.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn-primary" id="btnHeroProjects">Deploy Projects</a>
+            <a href="resume.pdf" class="btn-secondary" id="btnHeroResume" target="_blank"
+              style="display: flex; align-items: center; gap: 8px;">
+              <i data-lucide="file-text" style="width: 18px; height: 18px;"></i> Resume
+            </a>
+            <a href="#contact" class="btn-secondary" id="btnHeroTerminal">Access Terminal</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="cyber-badge" id="heroBadge">
+            <div class="cyber-badge-inner">
+              <div class="cyber-badge-core" style="padding: 0; overflow: hidden; background: none; border-color: var(--color-cyan); box-shadow: var(--shadow-cyber);">
+                <img src="assets/hacker.png" alt="Hacker" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+              </div>
+              <div class="status-orbit"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+      <div class="section-bg-grid"></div>
+
+      <div class="section-header">
+        <span class="section-subtitle">Identity Verification</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-visual" id="aboutVisual">
+          <div class="profile-card">
+            <div class="profile-avatar-container" style="padding: 0;">
+              <img src="assets/pfp.png" alt="PADMESH" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+            </div>
+            <h3 class="profile-name">PADMESH MK</h3>
+            <p class="profile-title">[ Cybersecurity Student ]</p>
+            <div class="profile-stats-grid">
+              <div class="profile-stat-box">
+                <span class="profile-stat-val">2+</span>
+                <span class="profile-stat-lbl">Yrs Coding</span>
+              </div>
+              <div class="profile-stat-box">
+                <span class="profile-stat-val">3</span>
+                <span class="profile-stat-lbl">Real Projects</span>
+              </div>
+              <div class="profile-stat-box">
+                <span class="profile-stat-val">6.68</span>
+                <span class="profile-stat-lbl">CSE CGPA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <h3>Building Secure Software & <span>Defending Networks</span></h3>
+          <p>
+            I am a B.E. Computer Science and Engineering student specializing in Cybersecurity at Sathyabama Institute of Science and Technology, expected to graduate in 2026. I have built hands-on expertise in secure application development, embedded IoT systems, and automated machine learning surveillance logic.
+          </p>
+          <p>
+            I regularly practice penetration testing tools and frameworks including Kali Linux, Burp Suite, and Metasploitable, hardening my cybersecurity knowledge with active security challenges on Hack The Box.
+          </p>
+
+          <div class="about-highlight-grid">
+            <div class="about-highlight-card">
+              <div class="about-highlight-icon"><i data-lucide="shield-check"></i></div>
+              <div class="about-highlight-info">
+                <h4>Cyber Security & VAPT</h4>
+                <p>Active Hack The Box competitor fluent in Kali Linux, Burp Suite, and Metasploitable audits.</p>
+              </div>
+            </div>
+            <div class="about-highlight-card">
+              <div class="about-highlight-icon"><i data-lucide="cpu"></i></div>
+              <div class="about-highlight-info">
+                <h4>Embedded & ML Dev</h4>
+                <p>Developing AI-powered video pipelines, Flask backends, and MQ-5 Arduino circuits.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-education" style="margin-top: 30px; border-top: 1px solid var(--border-slate); padding-top: 20px;">
+            <h4 style="font-family: var(--font-heading); font-size: 1rem; color: var(--color-cyan); margin-bottom: 15px; display: flex; align-items: center; gap: 8px; text-transform: uppercase; letter-spacing: 1px;">
+              <i data-lucide="graduation-cap"></i> Education Credentials
+            </h4>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <div style="background: rgba(13, 25, 48, 0.25); border: 1px solid var(--border-slate); padding: 12px 18px; border-radius: 6px; display: flex; flex-direction: column; gap: 4px;">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 4px;">
+                  <span style="font-weight: 700; font-size: 0.9rem; color: var(--text-primary);">B.E. CSE with Specialization in Cybersecurity</span>
+                  <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-cyan); background: rgba(0, 229, 255, 0.05); padding: 2px 8px; border-radius: 4px;">Expected 2026</span>
+                </div>
+                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 0;">Sathyabama Institute of Science and Technology, Chennai | <span style="font-family: var(--font-mono); color: var(--color-cyan);">CGPA: 6.68 / 10</span></p>
+              </div>
+              
+              <div style="background: rgba(13, 25, 48, 0.25); border: 1px solid var(--border-slate); padding: 12px 18px; border-radius: 6px; display: flex; flex-direction: column; gap: 4px;">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 4px;">
+                  <span style="font-weight: 700; font-size: 0.9rem; color: var(--text-primary);">Higher Secondary Certificate (HSC)</span>
+                  <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-secondary); background: rgba(148, 163, 184, 0.08); padding: 2px 8px; border-radius: 4px;">2022</span>
+                </div>
+                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 0;">Aristo Public School, Cuddalore | <span style="font-family: var(--font-mono);">Score: 68.6%</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <div class="section-bg-grid"></div>
+
+      <div class="section-header">
+        <span class="section-subtitle">Technical Matrix</span>
+        <h2 class="section-title">Skills & Arsenal</h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Cybersecurity Skills -->
+        <div class="skills-column" id="skillsSecurity">
+          <h3 class="skills-column-title"><i data-lucide="shield"></i> Cyber Security</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Penetration Testing (Web & Network)</span>
+                <span class="skill-percentage" data-target="85">0%</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Vulnerability Assessment & Audit</span>
+                <span class="skill-percentage" data-target="80">0%</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Network Security</span>
+                <span class="skill-percentage" data-target="75">0%</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar" data-width="75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Multi-Factor Authentication (MFA / TOTP)</span>
+                <span class="skill-percentage" data-target="80">0%</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar" data-width="80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Programming & Engineering Skills -->
+        <div class="skills-column" id="skillsDev">
+          <h3 class="skills-column-title"><i data-lucide="code"></i> Programming & Engineering</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Python Programming</span>
+                <span class="skill-percentage" data-target="90">0%</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">FastAPI & Flask Frameworks</span>
+                <span class="skill-percentage" data-target="85">0%</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">PyTorch & Machine Learning</span>
+                <span class="skill-percentage" data-target="75">0%</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar" data-width="75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Arduino IDE & Embedded Systems</span>
+                <span class="skill-percentage" data-target="80">0%</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar" data-width="80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools Tag Grid -->
+      <div class="discord-dashboard" id="toolsDashboard">
+        <h3 class="skills-column-title"><i data-lucide="wrench"></i> Tech Arsenal & Environments</h3>
+        <div class="tools-grid">
+          <span class="tool-tag">Kali Linux</span>
+          <span class="tool-tag">Metasploitable</span>
+          <span class="tool-tag">Burp Suite</span>
+          <span class="tool-tag">Hack The Box (HTB)</span>
+          <span class="tool-tag">Flask</span>
+          <span class="tool-tag">FastAPI</span>
+          <span class="tool-tag">PyTorch</span>
+          <span class="tool-tag">Arduino IDE</span>
+          <span class="tool-tag">PyOTP</span>
+          <span class="tool-tag">OpenCV</span>
+          <span class="tool-tag">WebSocket</span>
+          <span class="tool-tag">Git & GitHub</span>
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <div class="section-bg-grid"></div>
+
+      <div class="section-header">
+        <span class="section-subtitle">Active Deployments</span>
+        <h2 class="section-title">Projects Portfolio</h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Vision Transformer -->
+        <div class="project-card" id="project1">
+          <div class="project-thumbnail">
+            <div class="cyber-grid-line"></div>
+            <i data-lucide="eye"></i>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">PyTorch</span>
+              <span class="project-tag">FastAPI</span>
+              <span class="project-tag">OpenCV</span>
+            </div>
+            <h3 class="project-title">ViT Object Detection</h3>
+            <p class="project-desc">
+              Real-time surveillance backend using YOLOS (Vision Transformer) and PyTorch. Combines async video pipelines, FastAPI WebSocket broadcasting, and thread-safe CUDA threads.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/padmesh-mk" class="project-link" target="_blank"><i data-lucide="github"></i> Repository</a>
+              <a href="#" class="project-link"><i data-lucide="external-link"></i> Live Stream</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: MFA Cloud -->
+        <div class="project-card" id="project2">
+          <div class="project-thumbnail">
+            <div class="cyber-grid-line"></div>
+            <i data-lucide="key-round"></i>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Flask</span>
+              <span class="project-tag">PyOTP</span>
+              <span class="project-tag">TOTP</span>
+            </div>
+            <h3 class="project-title">MFA Cloud Security</h3>
+            <p class="project-desc">
+              Secure identity enrollment system executing Time-Based One-Time Passwords (TOTP) and Flask paired with QR-code generation for instant Google Authenticator handshakes.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/padmesh-mk" class="project-link" target="_blank"><i data-lucide="github"></i> Repository</a>
+              <a href="#" class="project-link"><i data-lucide="external-link"></i> Tech Spec</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Smoke/Gas Arduino -->
+        <div class="project-card" id="project3">
+          <div class="project-thumbnail">
+            <div class="cyber-grid-line"></div>
+            <i data-lucide="flame"></i>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag">Arduino</span>
+              <span class="project-tag">MQ-5 Sensor</span>
+              <span class="project-tag">IoT</span>
+              <span class="project-tag">Python</span>
+            </div>
+            <h3 class="project-title">MQ-5 IoT Gas Detector</h3>
+            <p class="project-desc">
+              Hazardous leak and smoke detection embedded systems engineered with Arduino UNO, automated buzzer/LED triggers, and serial output monitoring via Python.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/padmesh-mk" class="project-link" target="_blank"><i data-lucide="github"></i> Repository</a>
+              <a href="#" class="project-link"><i data-lucide="external-link"></i> Schematics</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+      <div class="section-bg-grid"></div>
+
+      <div class="section-header">
+        <span class="section-subtitle">Professional Experience</span>
+        <h2 class="section-title">Internship</h2>
+      </div>
+
+      <div class="timeline">
+        <!-- Experience 1 -->
+        <div class="timeline-item active" id="timelineItem1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Cybersecurity Workshop</h3>
+              <span class="timeline-date">2026</span>
+            </div>
+            <div class="timeline-company"><i data-lucide="award"></i> Besant Technologies</div>
+            <div class="timeline-desc">
+              <ul>
+                <li>Learned deeply about cybersecurity tools, penetration testing frameworks, and vulnerability concepts in an intensive hands-on workshop.</li>
+                <li>Gained extensive hands-on experience using Linux commands, shell environments, and secure system setups.</li>
+                <li>Explored practical network packet analysis, scanning tools, and security auditing guidelines.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="timeline-item" id="timelineItem2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3 class="timeline-role">DevOps Intern</h3>
+              <span class="timeline-date">Ongoing</span>
+            </div>
+            <div class="timeline-company"><i data-lucide="server"></i> Hell Craft Tech</div>
+            <div class="timeline-desc">
+              <ul>
+                <li>Managed high-performance Minecraft server environments utilizing Spigot and Paper platforms.</li>
+                <li>Applied key DevOps practices including optimization, automated backup systems, and system automation.</li>
+                <li>Orchestrated resources management, performance tuning, and low-latency system architectures.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Terminal Section -->
+    <section class="contact" id="contact">
+      <div class="section-bg-grid"></div>
+
+      <div class="section-header">
+        <span class="section-subtitle">Secure Communication</span>
+        <h2 class="section-title">Access Terminal</h2>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3 class="contact-info-title">Initiate <span>Handshake</span></h3>
+          <p class="contact-info-desc">
+            Want to collaborate on security audits, commission a custom high-performance Discord system, or chat about
+            cybersecurity trends? Open a secure session by typing in the adjacent terminal or via the standard routes.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-method">
+              <div class="contact-icon"><i data-lucide="mail"></i></div>
+              <div class="contact-text">
+                <h5>Mail</h5>
+                <p>padmeshmk@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="contact-icon"><img src="assets/discord.png" alt="Discord" style="width: 20px; height: 20px; object-fit: contain; vertical-align: middle;"></div>
+              <div class="contact-text">
+                <h5>Discord ID</h5>
+                <p>bmtamilgaming_yt</p>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="contact-icon"><i data-lucide="phone"></i></div>
+              <div class="contact-text">
+                <h5>Mobile</h5>
+                <p>+91 88256 40679</p>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+              <div class="contact-text">
+                <h5>Location</h5>
+                <p>Chennai, Tamil Nadu, India</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links" style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 10px;">
+            <a href="https://github.com/padmesh-mk" class="btn-secondary"
+              style="display: flex; align-items: center; gap: 8px; padding: 10px 18px; font-size: 0.85rem;"
+              target="_blank">
+              <img src="assets/github.png" alt="GitHub" style="width: 22px; height: 22px; object-fit: contain; vertical-align: middle;"> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/padmesh-m-k-105966251/" class="btn-secondary"
+              style="display: flex; align-items: center; gap: 8px; padding: 10px 18px; font-size: 0.85rem;"
+              target="_blank">
+              <img src="assets/linkedin.png" alt="LinkedIn" style="width: 22px; height: 22px; object-fit: contain; vertical-align: middle;"> LinkedIn
+            </a>
+            <a href="https://www.instagram.com/its.padmesh" class="btn-secondary"
+              style="display: flex; align-items: center; gap: 8px; padding: 10px 18px; font-size: 0.85rem;"
+              target="_blank">
+              <img src="assets/instagram.png" alt="Instagram" style="width: 28px; height: 28px; object-fit: contain; vertical-align: middle;"> Instagram
+            </a>
+          </div>
+        </div>
+
+        <!-- Simulated interactive console -->
+        <div class="terminal-window" id="terminalWindow">
+          <div class="terminal-header">
+            <div class="terminal-buttons">
+              <div class="terminal-btn close"></div>
+              <div class="terminal-btn minimize"></div>
+              <div class="terminal-btn maximize"></div>
+            </div>
+            <div class="terminal-title">guest@cybershield: ~</div>
+            <div style="width: 48px;"></div> <!-- Spacer for title centering -->
+          </div>
+
+          <div class="terminal-content" id="terminalContent">
+            <div class="terminal-log">
+              ============================================================
+              * WELCOME TO THE SECURE PORTFOLIO GATEWAY*
+              * SSH-AES256 ENCRYPTED LINK ESTABLISHED *
+              ============================================================
+              Type <span class="terminal-user-cmd">help</span> to list available commands.
+              Type <span class="terminal-user-cmd">contact</span> to send a direct message.</div>
+          </div>
+
+          <div class="terminal-header"
+            style="background: #060913; border-top: 1px solid var(--border-slate); border-bottom: none; border-radius: 0 0 6px 6px;">
+            <div class="terminal-input-container">
+              <span class="terminal-prompt">guest@cybershield:~$</span>
+              <input type="text" class="terminal-input" id="terminalInput" placeholder="" autocomplete="off"
+                spellcheck="false">
+              <span class="terminal-cursor" id="terminalCursor"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-copy">
+      &copy; 2026. All rights secured.
+    </div>
+  </footer>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- ES6 Main Logic -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
